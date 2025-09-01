@@ -1,26 +1,47 @@
-@"
-# Python cache
+# ----------------------------
+# Python bytecode & cache
+# ----------------------------
 __pycache__/
 *.py[cod]
+*.pyo
+*.so
 *.egg-info/
 .eggs/
 
-# Virtual envs
+# ----------------------------
+# Virtual environments
+# ----------------------------
 .venv/
 venv/
 env/
 ENV/
 
-# Jupyter autosaves
+# ----------------------------
+# Jupyter
+# ----------------------------
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/*
 
-# Make sure notebooks are NOT ignored (overrides any global rule)
-!*.ipynb
-
-# OS / IDE
-.DS_Store
-Thumbs.db
+# ----------------------------
+# IDE / Editor settings
+# ----------------------------
 .vscode/
 .idea/
-"@ | Set-Content -Encoding UTF8 .gitignore
+*.swp
+*.swo
+
+# ----------------------------
+# OS junk
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Data / Results / Folders
+# ----------------------------
+output/
+*.hdf5
+*.hdf
+*.fits
+*.npy
+*.npz
