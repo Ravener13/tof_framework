@@ -1,0 +1,26 @@
+@"
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter autosaves
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/*
+
+# Make sure notebooks are NOT ignored (overrides any global rule)
+!*.ipynb
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+"@ | Set-Content -Encoding UTF8 .gitignore
